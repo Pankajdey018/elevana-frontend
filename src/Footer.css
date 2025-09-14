@@ -1,0 +1,153 @@
+.footer {
+  background-color: #fdfdfd; /* soft off-white */
+  color: #111;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Top Section */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+}
+
+
+.footer-brand h4 {
+  font-weight: 700;
+  color: #ff4655;
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #888;
+}
+
+/* Newsletter */
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.newsletter-form label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #565656;
+}
+
+.newsletter-input {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.newsletter-input input {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: #fff;
+  color: #111;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter-input input::placeholder {
+  color: #aaa;
+}
+
+.newsletter-input input:focus {
+  border-color: #ff4655;
+  box-shadow: 0 0 0 3px rgba(255, 70, 85, 0.2);
+  outline: none;
+}
+
+.newsletter-input button {
+  background-color: #ff4655;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-input button:hover {
+  background-color: #e03a48;
+}
+
+/* Links Grid */
+.footer-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-links-grid h6 {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #565656;
+  margin-bottom: 0.75rem;
+}
+
+.footer-links-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-grid ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links-grid ul li a {
+  color: #888;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.footer-links-grid ul li a:hover {
+  color: #ff4655;
+  font-weight: 600;
+}
+
+/* Social Icons */
+.social-icons a {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff4655;
+}
+
+/* Bottom Section */
+.footer-bottom {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+}

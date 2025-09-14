@@ -1,0 +1,123 @@
+.profile-setup {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(20, 20, 20, 0.95);
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 0 30px rgba(255, 70, 85, 0.25);
+  color: #eaeaea;
+}
+
+.profile-setup h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  color: #ff4655;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* === Form Layout === */
+.profile-form .row {
+  gap: 1rem;
+}
+
+.profile-form .form-label {
+  color: #ccc;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.profile-form .form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.profile-form .form-control::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+.profile-form .form-control:focus {
+  border-color: #ff4655;
+  box-shadow: 0 0 0 0.2rem rgba(255, 70, 85, 0.25);
+}
+
+/* === File Inputs === */
+.profile-form .form-control[type="file"] {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 0.6rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.profile-form .form-control[type="file"]::file-selector-button {
+  background-color: #ff4655;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-form .form-control[type="file"]::file-selector-button:hover {
+  background-color: #e03a48;
+}
+
+/* === Role Toggle Buttons === */
+.btn-group .btn {
+  margin: 0 0.5rem;
+  min-width: 120px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.btn-warning {
+  background-color: #ff4655;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #e03a48;
+  transform: scale(1.05);
+}
+
+/* === Submit Button === */
+.profile-form button[type="submit"] {
+  margin-top: 2rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .profile-setup {
+    padding: 2rem;
+  }
+
+  .btn-group .btn {
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+
+  .profile-form .form-control {
+    font-size: 0.95rem;
+  }
+
+  .profile-form button[type="submit"] {
+    font-size: 0.95rem;
+  }
+}

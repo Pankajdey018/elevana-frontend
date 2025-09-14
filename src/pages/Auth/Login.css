@@ -1,0 +1,32 @@
+.login-card {
+  max-width: 400px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.login-card h2 {
+  font-weight: 600;
+}
+
+.login-card .form-control {
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.login-card button {
+  font-weight: 500;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.login-card a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-card a:hover {
+  color: #e65c2a;
+}

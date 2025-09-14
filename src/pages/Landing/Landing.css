@@ -1,0 +1,221 @@
+/* === Valorant Base Styling === */
+body {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  background-size: cover;
+  font-family: 'Rajdhani', 'Segoe UI', sans-serif;
+  color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* === Container === */
+.container-fluid {
+  background-color: rgba(20, 20, 20, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.2);
+}
+
+/* === Typography === */
+.text-primary {
+  color: #ff4655 !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.text-light {
+  color: #ccc !important;
+}
+
+.text-dark {
+  color: #111 !important;
+}
+
+/* === Buttons === */
+.btn-warning {
+  background-color: #ff4655;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #e03a48;
+  transform: scale(1.05);
+}
+
+.btn-outline-light {
+  border: 2px solid #ff4655;
+  color: #ff4655;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btn-outline-light:hover {
+  background-color: #ff4655;
+  color: #fff;
+}
+
+/* === Login Card === */
+.login-card {
+  max-width: 420px;
+  background-color: #111;
+  border: 2px solid #ff4655;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 0 30px rgba(255, 70, 85, 0.3);
+}
+
+.login-card h2 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 700;
+  color: #ff4655;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.login-card .form-label {
+  color: #ccc;
+  font-weight: 500;
+}
+
+.login-card .form-control {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.login-card .form-control:focus {
+  border-color: #ff4655;
+  box-shadow: 0 0 0 0.2rem rgba(255, 70, 85, 0.25);
+}
+
+/* === CTA Banner === */
+.cta-banner {
+  background: linear-gradient(to right, #ff4655, #ff6f61);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 70, 85, 0.3);
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.cta-banner h4,
+.cta-banner p {
+  color: #fff;
+}
+
+/* === Footer === */
+footer {
+  font-size: 0.9rem;
+  background-color: #0d0d0d;
+  color: #777;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #222;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 2rem;
+  }
+
+  .cta-banner {
+    padding: 2rem;
+  }
+
+  .cta-banner h4 {
+    font-size: 1.3rem;
+  }
+
+  .cta-banner p {
+    font-size: 0.95rem;
+  }
+}
+
+
+.feature-card {
+  background: rgba(20, 20, 20, 0.85);
+  border: 2px solid #ff4655;
+  border-radius: 12px;
+  padding: 2.5rem;
+  color: #eaeaea;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  box-shadow: 0 0 20px rgba(255, 70, 85, 0.1);
+  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px) rotateX(2deg);
+  box-shadow: 0 0 40px rgba(255, 70, 85, 0.4);
+  border-color: #ff6f61;
+}
+
+/* Pulse effect on emoji/icon */
+.feature-card h4 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ff4655;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover h4 {
+  transform: scale(1.05);
+}
+
+/* Glowing border animation */
+.feature-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 14px;
+  background: linear-gradient(45deg, #ff4655, #ff6f61, #ff4655);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.feature-card:hover::before {
+  opacity: 0.2;
+}
+
+/* Text */
+.feature-card p {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-card {
+    padding: 2rem;
+  }
+
+  .feature-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .feature-card p {
+    font-size: 0.95rem;
+  }
+}
