@@ -2,6 +2,7 @@ import StatCard from "./StatCard";
 import SuggestedProfiles from "./SuggestedProfiles";
 import UpcomingEvents from "./UpcomingEvents";
 import "./Dashboard.css";
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   const userName = "Pankaj"; // You can fetch this dynamically later
@@ -9,9 +10,15 @@ export default function Dashboard() {
   return (
     <div className="dashboard container-fluid py-5">
       {/* Welcome Banner */}
+
       <div className="welcome-banner mb-4">
         <h2 className="text-accent">Welcome back, {userName} 👋</h2>
-        <p className="text-muted">Here’s what’s happening in your network today.</p>
+        <p>Here’s what’s happening in your network today.</p>
+
+        {/* CTA Button */}
+        <Link to="/availability-setup" className="btn btn-danger mt-3">
+          Set Mentorship Availability
+        </Link>
       </div>
 
       {/* Stats Overview */}

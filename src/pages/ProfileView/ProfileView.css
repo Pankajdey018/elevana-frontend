@@ -1,0 +1,50 @@
+.profile-view {
+  background-color: #0f0f0f;
+  min-height: 100vh;
+}
+
+.profile-card {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 70, 85, 0.2);
+}
+
+.profile-header .profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff4655;
+}
+
+.section-title {
+  color: #ff4655;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: #ff4655;
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.btn-danger {
+  background-color: #ff4655;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-danger:hover {
+  background-color: #e03a48;
+}

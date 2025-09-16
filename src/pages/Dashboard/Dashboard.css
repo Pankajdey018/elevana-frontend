@@ -229,3 +229,9 @@
   background-color: #ff4655;
   color: #fff;
 }
+
+.btn-danger:hover {
+  background-color: #e03a48;
+  box-shadow: 0 0 10px rgba(255, 70, 85, 0.4);
+}
+

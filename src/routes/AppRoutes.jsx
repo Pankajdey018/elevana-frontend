@@ -8,6 +8,9 @@ import Directory from '../pages/Directory/Directory';
 import MentorshipTracker from "../components/Mentorship/MentorshipTracker.jsx";
 import Navbar from "../Navbar.jsx"
 import Footer from '../Footer.jsx';
+import ProfileView from '../pages/ProfileView/ProfileView.jsx';
+import AvailabilitySetup from '../pages/AvailabilitySetup/AvailabilitySetup.jsx';
+import EventCalendar from '../pages/EventCalendar/EventCalendar.jsx';
 
 export default function AppRoutes() {
   return (
@@ -21,6 +24,9 @@ export default function AppRoutes() {
         <Route path="/profile-setup" element={<ProfileSetup />} />
         <Route path="/directory" element={<Directory />} />
         <Route path="/mentorship-tracker" element={<MentorshipTracker />} />
+        <Route path="/profile/:id" element={<ProfileView />} />
+        <Route path="/availability-setup" element={<AvailabilitySetup />} />
+        <Route path="/events" element={<EventCalendar />} />
       </Routes>
     <Footer />
     </Router>

@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./ProfileSetup.css";
+import { Link } from "react-router-dom";
+
 
 export default function ProfileSetup() {
   const [role, setRole] = useState("student");
@@ -24,14 +26,18 @@ export default function ProfileSetup() {
           <div className="btn-group">
             <button
               type="button"
-              className={`btn ${role === "student" ? "btn-warning" : "btn-outline-light"}`}
+              className={`btn ${
+                role === "student" ? "btn-warning" : "btn-outline-light"
+              }`}
               onClick={() => handleRoleChange("student")}
             >
               Student
             </button>
             <button
               type="button"
-              className={`btn ${role === "alumni" ? "btn-warning" : "btn-outline-light"}`}
+              className={`btn ${
+                role === "alumni" ? "btn-warning" : "btn-outline-light"
+              }`}
               onClick={() => handleRoleChange("alumni")}
             >
               Alumni
@@ -43,29 +49,50 @@ export default function ProfileSetup() {
         <div className="row mb-3">
           <div className="col-md-5">
             <label className="form-label">Full Name</label>
-            <input type="text" className="form-control" placeholder="Enter your full name" required />
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter your full name"
+              required
+            />
           </div>
           <div className="col-md-5">
             <label className="form-label">Email Address</label>
-            <input type="email" className="form-control" placeholder="Enter your email" />
+            <input
+              type="email"
+              className="form-control"
+              placeholder="Enter your email"
+            />
           </div>
         </div>
 
         {/* Bio */}
         <div className="mb-3">
           <label className="form-label">About You</label>
-          <textarea className="form-control" rows="4" placeholder="Tell us about yourself..." />
+          <textarea
+            className="form-control"
+            rows="4"
+            placeholder="Tell us about yourself..."
+          />
         </div>
 
         {/* Interests + Skills */}
         <div className="row mb-3">
           <div className="col-md-5">
             <label className="form-label">Interests</label>
-            <input type="text" className="form-control" placeholder="Comma separated interests" />
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Comma separated interests"
+            />
           </div>
           <div className="col-md-5">
             <label className="form-label">Skills</label>
-            <input type="text" className="form-control" placeholder="Comma separated skills" />
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Comma separated skills"
+            />
           </div>
         </div>
 
@@ -75,16 +102,28 @@ export default function ProfileSetup() {
             <div className="row mb-3">
               <div className="col-md-5">
                 <label className="form-label">Current Company</label>
-                <input type="text" className="form-control" placeholder="Company name" />
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Company name"
+                />
               </div>
               <div className="col-md-5">
                 <label className="form-label">Years of Experience</label>
-                <input type="text" className="form-control" placeholder="e.g. 5 years" />
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="e.g. 5 years"
+                />
               </div>
             </div>
             <div className="mb-3">
               <label className="form-label">Past Experiences</label>
-              <textarea className="form-control" rows="3" placeholder="Roles, companies, duration" />
+              <textarea
+                className="form-control"
+                rows="3"
+                placeholder="Roles, companies, duration"
+              />
             </div>
           </>
         )}
@@ -92,7 +131,11 @@ export default function ProfileSetup() {
         {role === "student" && (
           <div className="mb-3">
             <label className="form-label">Projects</label>
-            <textarea className="form-control" rows="3" placeholder="Titles, tech stack, links" />
+            <textarea
+              className="form-control"
+              rows="3"
+              placeholder="Titles, tech stack, links"
+            />
           </div>
         )}
 
@@ -107,8 +150,12 @@ export default function ProfileSetup() {
             <input type="file" className="form-control" />
           </div>
         </div>
-
-        <button type="submit" className="btn btn-warning w-100">Save Profile</button>
+        <Link to="/availability-setup" className="btn btn-warning mt-3">
+          Define Availability
+        </Link>
+        <button type="submit" className="btn btn-warning w-100">
+          Save Profile
+        </button>
       </form>
     </div>
   );

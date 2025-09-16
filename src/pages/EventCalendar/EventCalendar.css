@@ -1,0 +1,19 @@
+.event-calendar {
+  background-color: #0f0f0f;
+  min-height: 100vh;
+}
+
+.event-list {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.event-card {
+  background-color: #1a1a1a;
+  box-shadow: 0 0 15px rgba(255, 70, 85, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}

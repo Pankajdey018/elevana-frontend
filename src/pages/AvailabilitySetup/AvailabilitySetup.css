@@ -1,0 +1,74 @@
+.availability-setup {
+  background-color: #0f0f0f;
+  min-height: 100vh;
+}
+
+.availability-form {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 70, 85, 0.2);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #eaeaea;
+}
+
+input,
+textarea {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.btn-danger {
+  background-color: #ff4655;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-danger:hover {
+  background-color: #e03a48;
+}
+
+.btn-outline-light {
+  border: 1px solid #555;
+  color: #ccc;
+  background-color: transparent;
+}
+
+.btn-outline-light:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+input[type="date"],
+input[type="time"] {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+input[type="date"]::placeholder,
+input[type="time"]::placeholder {
+  color: #aaa;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus {
+  border-color: #ff4655;
+  box-shadow: 0 0 0 3px rgba(255, 70, 85, 0.3);
+  outline: none;
+}
+
