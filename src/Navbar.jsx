@@ -30,6 +30,9 @@ export default function Navbar() {
         <li>
           <Link to="/profile-setup">Profile</Link>
         </li>
+        <li>
+          <Link to="/message">Chats</Link>
+        </li>
       </ul>
     </nav>
   );

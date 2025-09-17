@@ -11,6 +11,7 @@ import Footer from '../Footer.jsx';
 import ProfileView from '../pages/ProfileView/ProfileView.jsx';
 import AvailabilitySetup from '../pages/AvailabilitySetup/AvailabilitySetup.jsx';
 import EventCalendar from '../pages/EventCalendar/EventCalendar.jsx';
+import MessagingInterface from '../pages/Messaging/MessagingInterface.jsx';
 
 export default function AppRoutes() {
   return (
@@ -27,6 +28,7 @@ export default function AppRoutes() {
         <Route path="/profile/:id" element={<ProfileView />} />
         <Route path="/availability-setup" element={<AvailabilitySetup />} />
         <Route path="/events" element={<EventCalendar />} />
+        <Route path="/message" element={<MessagingInterface />} />
       </Routes>
     <Footer />
     </Router>
