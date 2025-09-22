@@ -33,6 +33,9 @@ export default function Navbar() {
         <li>
           <Link to="/message">Chats</Link>
         </li>
+        <li>
+          <Link to="/job">Jobs</Link>
+        </li>
       </ul>
     </nav>
   );

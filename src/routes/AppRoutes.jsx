@@ -12,6 +12,7 @@ import ProfileView from '../pages/ProfileView/ProfileView.jsx';
 import AvailabilitySetup from '../pages/AvailabilitySetup/AvailabilitySetup.jsx';
 import EventCalendar from '../pages/EventCalendar/EventCalendar.jsx';
 import MessagingInterface from '../pages/Messaging/MessagingInterface.jsx';
+import JobBoard from '../pages/Jobs/JobBoard.jsx';
 
 export default function AppRoutes() {
   return (
@@ -29,6 +30,7 @@ export default function AppRoutes() {
         <Route path="/availability-setup" element={<AvailabilitySetup />} />
         <Route path="/events" element={<EventCalendar />} />
         <Route path="/message" element={<MessagingInterface />} />
+        <Route path="/job" element={<JobBoard />} />
       </Routes>
     <Footer />
     </Router>

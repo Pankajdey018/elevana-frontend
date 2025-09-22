@@ -1,4 +1,9 @@
 import "./Footer.css";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import EmailIcon from "@mui/icons-material/Email";
 
 export default function Footer() {
   return (
@@ -68,17 +73,28 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+
+          <div className="footer-social">
             <h6>Follow Us</h6>
             <div className="social-icons">
               <a href="https://twitter.com" target="_blank" rel="noreferrer">
-                <i className="bi bi-twitter"></i>
+                <TwitterIcon sx={{ color: "#1DA1F2", fontSize: 28 }} />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                <i className="bi bi-linkedin"></i>
+                <LinkedInIcon sx={{ color: "#0077B5", fontSize: 28 }} />
               </a>
               <a href="https://github.com" target="_blank" rel="noreferrer">
-                <i className="bi bi-github"></i>
+                <GitHubIcon sx={{ color: "#333", fontSize: 28 }} />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">
+                <InstagramIcon sx={{ color: "#E1306C", fontSize: 28 }} />
+              </a>
+              <a
+                href="mailto:hello@elevana.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <EmailIcon sx={{ color: "#D44638", fontSize: 28 }} />
               </a>
             </div>
           </div>
